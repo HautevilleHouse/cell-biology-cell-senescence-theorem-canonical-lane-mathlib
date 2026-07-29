@@ -1,0 +1,20 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.SenescenceSignalingPathway
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.DNADamageResponse
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.TelomereAttrition
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.EpigeneticDeregulation
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.StemCellExhaustion
+import HautevilleHouse.CellBiologyCellSenescenceTheoremCanonicalLaneLean.MtorSignaling
+
+namespace HautevilleHouse
+namespace CellBiologyCellSenescenceTheoremCanonicalLaneLean
+
+def CellSenescenceTheoremClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem cell_senescence_theorem_endgame (A : AdmissibleClass) :
+    CellSenescenceTheoremClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end CellBiologyCellSenescenceTheoremCanonicalLaneLean
+end HautevilleHouse
